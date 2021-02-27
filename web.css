@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+sans:488,888&display=swap');
+**
+{
+    margin: 1px;
+    padding: 0;
+}
+
+:root{
+    --dark-color: #2d2c2c;
+    --purple-solid: #350a4f;
+    --purple-transparent: rgba(53, 10, 79, .7);
+    --purple-transparent-alt: rgba(53,10,79,.5);
+    --purple-light: #8f50fb;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
+    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+}
+
+
+
+#menu ul 
+{
+    list-style: none;
+    z-index: 1000;
+}
+#menu ul li
+{
+    border: 0px solid white;
+    width: 230px;
+    height: 30px;
+    text-transform: uppercase;
+    padding: .4rem .1rem;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    border: -9px;
+    margin-left: -10px;
+    margin-right: 11px;
+    position: relative;
+    border-radius: 10rem;
+    float: left;
+}
+#menu ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Courgette', cursive;
+    display: block;
+}
+#menu ul ul{
+    position: relative;
+    padding: .4rem .1rem;
+    border: 9px;
+    float: left;
+    margin-top: -9px;
+    font-family: 'Courgette', cursive;
+    margin-left: 6px;
+    margin-bottom: -5px;
+    display: none;
+}
+#menu ul li:hover>ul
+{
+    display: block;
+    
+}
+
+#outerbox
+{
+    z-index: -100;
+ width: 1260px;
+ height: 600px;
+ margin-left: -5px;
+ overflow: hidden;
+}
+#sliderbox
+{
+    position: relative;
+    width: 5280px; 
+    animation-name: slide;
+    margin-top: -5px;
+    animation-duration: 20s;  
+    animation-iteration-count: infinite;
+}
+#sliderbox img{
+    float: left;
+}
+@keyframes slide{
+    0%{
+         left: 0px;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -1280px;
+    }
+    45%{
+        left: -1280px;
+    }
+    50%{
+        left: -2560px;
+    }
+    70%{
+        left: -2560px;
+    }
+    75%{
+        left: -3840px;
+    }
+    95%{
+        left: 3840px;
+    }
+    100%{
+        left: 5180px;
+    }
+}
+.top-cat{
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.top-catpro{
+    border: 0px solid rgb(94, 255, 0);
+    text-decoration: aqua;
+    transform: translate(0);
+    transition: none;
+    width: 350px;
+    height: 280px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: auto;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,.4), 0 6px 20px 0 rgba(0,0,0,.35);
+    transition: transform 1s;
+}
+.top-catpro:hover{
+    transform: scale(1.05);
+}
+.top-catpro img{
+    width: 100%;
+}
+.checked{
+    color: orange;
+}
+.starr{
+    border: 0px solid black;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.title p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -4px;
+    
+}
+
+/*footer*/
+
+.footer{
+    height: 250px;
+    width: 100%;
+    border: 0px solid black;
+    background-color: none;
+    background-image: var(--gradient-color);
+    display: flex;
+    font-family: 'Courgette', cursive;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerb{
+    height: 180px;
+    width: 300px;
+    text-align: center;
+    border: 0px solid blue;
+    float: left;
+    color: white;
+
+}
+
+.btn{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .5rem 3.5rem;
+    border: none;
+    border-radius: 10rem;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.btn-gradient{
+    background-image: var(--gradient-color);
+    
+}
+
+.btn-gradient:hover{
+    background-image: var(--gradient-color-alt);
+}
+
+.btn-form{
+    background-image: var(--gradient-color);
+    margin-top: 2px;
+}
+
+.btn-form:hover{
+    background-image: var(--gradient-color-alt);
+}
+
+.pulsate{
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: .3;
+    color: rgb(226, 223, 233);
+}
+
+@-webkit-keyframes pulsate{
+    0%{
+        opacity: .3;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .3;
+    }
+} 
+
+
+
